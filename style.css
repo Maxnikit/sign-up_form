@@ -1,26 +1,112 @@
-html,
-body {
-  margin: 0;
-  padding: 0;
+@import "normalize.css";
+@import url(https://db.onlinewebfonts.com/c/7d460b18433753a097e5bc2bad7c8dd9?family=Norse+Bold);
+@import url(https://db.onlinewebfonts.com/c/0033a2fbc0329740fb86c1cfd134cb94?family=Roboto);
+* {
+  font-family: "Roboto";
 }
-body {
+.wrapper {
   display: flex;
-}
-.leftLogo {
+  flex-direction: row;
   height: 100vh;
 }
-.leftLogo img {
-  height: 100%;
+.leftLogo {
+  /* background-image: url("images/malik-skydsgaard-bop5rmAXHvw-unsplash.jpg"); */
+  background-image: url("images/kevin-jackson-EXdTyJ13-nQ-unsplash.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  min-height: 100%;
+  flex: 1 0 33vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
-
+.logoContainer {
+  margin-top: 200px;
+  width: 100%;
+  background-color: rgb(0, 0, 0, 0.5);
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 60px;
+  font-family: "Norse bold";
+}
+img {
+  width: 100px;
+}
+.credits {
+  color: white;
+  position: fixed;
+  bottom: 0;
+  margin: 10px;
+}
+.credits a {
+  color: inherit;
+  background-color: rgb(0, 0, 0, 0.6);
+}
 .main {
   display: flex;
   flex-direction: column;
   margin: 0;
+  background-color: #faedcd;
+  min-height: 100%;
+}
+.mainContainer {
+  margin: 180px 0;
+}
+h1 {
+  margin: 0px 60px;
+}
+.title {
+  margin-bottom: 20px;
+}
+.subtitle {
+  margin-bottom: 60px;
 }
 fieldset {
   display: flex;
-  flex-direction: column;
-  width: 700px;
-  height: 150px;
+  flex-flow: row wrap;
+  width: 1000px;
+  margin: 0;
+  border: 0;
+  padding: 0;
+  margin-left: 60px;
+}
+.inputField {
+  background-color: #fefae0;
+  margin: 0;
+  box-shadow: 10px 8px 5px 0px rgba(0, 0, 0, 0.3);
+  font-size: 20px;
+}
+input {
+  width: 300px;
+}
+label {
+  display: flex;
+  flex-flow: wrap column;
+  margin-right: 60px;
+  margin-bottom: 30px;
+}
+button {
+  --button-color: #013220;
+  margin: 20px 60px;
+  padding: 8px 40px;
+  font-size: 24px;
+  border-radius: 10px;
+  box-shadow: 10px 8px 5px 0px rgba(0, 0, 0, 0.3);
+  background-color: var(--button-color);
+  border: var(--button-color);
+  color: white;
+}
+button:hover {
+  --button-color: #04dc8d;
+  background-color: var(--button-color);
+  border: var(--button-color);
+  cursor: pointer;
+}
+p {
+  margin: 0px 60px;
+  font-size: 18px;
 }
