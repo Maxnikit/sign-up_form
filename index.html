@@ -53,6 +53,7 @@
                     name="firstName"
                     id="firstName"
                     placeholder="Reinhardt"
+                    required
                 /></label>
                 <label for="lastName"
                   >LAST NAME
@@ -61,6 +62,7 @@
                     name="lastName"
                     id="lastName"
                     placeholder="Wilhiam"
+                    required
                 /></label>
                 <label for="email"
                   >EMAIL
@@ -69,14 +71,17 @@
                     name="email"
                     id="email"
                     placeholder="reinhardt2016@gmail.com"
+                    required
                 /></label>
                 <label for="phoneNumber"
-                  >PHONE NUMBER
+                  ><span>PHONE NUMBER (Format: 123-456-7890)</span>
                   <input
-                    type="number"
+                    type="tel"
                     name="phoneNumber"
                     id="phoneNumber"
-                    placeholder="+0(123)456-78-90"
+                    pattern="[0-9]{3}-[0-9]"
+                    placeholder="123-456-7890"
+                    required
                 /></label>
                 <label for="password"
                   >PASSWORD
@@ -85,6 +90,9 @@
                     name="password"
                     id="password"
                     placeholder="********"
+                    minlength="8"
+                    maxlength="16"
+                    required
                 /></label>
                 <label for="passwordConfirm"
                   >CONFIRM PASSWORD
@@ -93,6 +101,7 @@
                     name="passwordConfirm"
                     id="passwordConfirm"
                     placeholder="********"
+                    required
                 /></label>
               </fieldset>
             </div>

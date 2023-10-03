@@ -54,7 +54,7 @@ img {
   min-height: 100%;
 }
 .mainContainer {
-  margin: 180px 0;
+  margin: 150px 0;
 }
 h1 {
   margin: 0px 60px;
@@ -74,20 +74,31 @@ fieldset {
   padding: 0;
   margin-left: 60px;
 }
-.inputField {
-  background-color: #fefae0;
-  margin: 0;
-  box-shadow: 10px 8px 5px 0px rgba(0, 0, 0, 0.3);
-  font-size: 20px;
-}
-input {
-  width: 300px;
-}
 label {
   display: flex;
   flex-flow: wrap column;
   margin-right: 60px;
   margin-bottom: 30px;
+  font-size: 14px;
+  color: #4d4d4d;
+}
+label input {
+  font-size: 24px;
+}
+.inputField {
+  background-color: #fefae0;
+  margin: 0;
+  box-shadow: 10px 8px 5px 0px rgba(0, 0, 0, 0.3);
+  font-size: 24px;
+}
+input {
+  width: 300px;
+}
+input:valid {
+  outline-color: green;
+}
+input:invalid {
+  outline-color: red;
 }
 button {
   --button-color: #013220;
@@ -101,7 +112,7 @@ button {
   color: white;
 }
 button:hover {
-  --button-color: #04dc8d;
+  --button-color: #1a4736;
   background-color: var(--button-color);
   border: var(--button-color);
   cursor: pointer;
@@ -109,4 +120,8 @@ button:hover {
 p {
   margin: 0px 60px;
   font-size: 18px;
+}
+p a {
+  color: #013220;
+  text-decoration: none;
 }
