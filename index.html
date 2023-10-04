@@ -25,7 +25,7 @@
         <div class="logoContainer">
           <img
             src="images/—Pngtree—vector of viking head with_5003612.png"
-            alt="viking logo"
+            alt="Reinhardt logo"
           />
           AYKHENVALD
         </div>
@@ -74,15 +74,11 @@
                     required
                 /></label>
                 <label for="phoneNumber"
-                  ><span>PHONE NUMBER (Format: 123-456-7890)</span>
-                  <input
-                    type="tel"
-                    name="phoneNumber"
-                    id="phoneNumber"
-                    pattern="[0-9]{3}-[0-9]"
-                    placeholder="123-456-7890"
-                    required
-                /></label>
+                  ><span>PHONE NUMBER (Format: 123-456-7890)</span> <input
+                  type="tel" name="phoneNumber" id="phoneNumber" pattern:
+                  "^([+]?[\s0-9]+)?(\d{3}|[(]?[0-9]+[)])?([-]?[\s]?[0-9])+$"
+                  placeholder="123-456-7890" required /></label
+                >
                 <label for="password"
                   >PASSWORD
                   <input
@@ -92,6 +88,7 @@
                     placeholder="********"
                     minlength="8"
                     maxlength="16"
+                    onchange="check()"
                     required
                 /></label>
                 <label for="passwordConfirm"
@@ -102,6 +99,7 @@
                     id="passwordConfirm"
                     placeholder="********"
                     required
+                    onchange="check()"
                 /></label>
               </fieldset>
             </div>
@@ -111,6 +109,6 @@
         </div>
       </div>
     </div>
-    <script src="" async defer></script>
+    <script src="script.js" async defer></script>
   </body>
 </html>

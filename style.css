@@ -92,14 +92,24 @@ label input {
   font-size: 24px;
 }
 input {
+  border-radius: 5px;
   width: 300px;
 }
-input:valid {
-  outline-color: green;
-}
 input:invalid {
-  outline-color: red;
+  border: 2px solid red;
+  outline: none;
 }
+input:focus {
+  border: 2px solid blue;
+  outline: none;
+  box-shadow: 10px 8px 5px 0px rgba(0, 0, 0, 0.3);
+}
+
+input:valid {
+  border: 2px solid green;
+  outline: none;
+}
+
 button {
   --button-color: #013220;
   margin: 20px 60px;
